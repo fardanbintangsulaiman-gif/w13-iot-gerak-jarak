@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>W13 Deteksi Gerakan dan Pengukuran Jarak</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 980px;
+      margin: 20px auto;
+      padding: 0 12px;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    h1 { font-size: 1.4rem; margin-bottom: 4px; }
+    p { color: #475569; margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    iframe { width: 100%; height: 260px; border: 0; }
+  </style>
+</head>
+<body>
+  <h1>Monitoring Gerakan PIR &amp; Jarak Ultrasonik (W13)</h1>
+  <p>Channel ID ThingSpeak: <strong>3580367</strong></p>
+
+  <div class="grid">
+    <div class="card">
+      <iframe src="https://thingspeak.com/channels/3580367/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=30&type=line"></iframe>
+    </div>
+    <div class="card">
+      <iframe src="https://thingspeak.com/channels/3580367/charts/2?bgcolor=%23ffffff&color=%232563eb&dynamic=true&results=30&type=line"></iframe>
+    </div>
+    <div class="card">
+      <iframe src="https://thingspeak.com/channels/3580367/charts/3?bgcolor=%23ffffff&color=%23dc2626&dynamic=true&results=30&type=line"></iframe>
+    </div>
+    <div class="card">
+      <iframe src="https://thingspeak.com/channels/3580367/charts/4?bgcolor=%23ffffff&color=%2316a34a&dynamic=true&results=30&type=line"></iframe>
+    </div>
+    <div class="card">
+      <iframe src="https://thingspeak.com/channels/3580367/charts/5?bgcolor=%23ffffff&color=%237c3aed&dynamic=true&results=30&type=line"></iframe>
+    </div>
+  </div>
+</body>
+</html>
